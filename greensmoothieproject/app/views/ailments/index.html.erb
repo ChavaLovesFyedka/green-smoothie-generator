@@ -1,0 +1,39 @@
+
+
+
+<br>
+<div class="search-form" >
+<br>
+<br>
+<h1 class="logo">Green Smoothie Generator</h1>
+
+<img src="http://fc06.deviantart.net/fs41/i/2009/042/9/a/Ghost_in_a_Blender_by_venkman_project.jpg" alt="Juice" width="250" height="200">
+
+<p><h4>Switch to a collection_select drop down menu</h4></p>
+
+<%= form_tag recipes_path, :remote => true, :method => :get do %>
+  <div class="ui-widget">
+      <%= search_field_tag :search, params[:search], id: "tags", class: "search-query", size: "50", :placeholder => "Select an ailment" %>
+      <%= submit_tag "Search", :name => nil, class: "btn btn-danger btn-lg", id: "search-submit" %>
+
+      <!-- :"data-toggle" => "modal", :"data-target" => "#myModal", -->
+  </div>
+<% end %><br>
+</div>
+
+<div id="recipe-result">
+</div>
+
+<a href="https://twitter.com/intent/tweet?button_hashtag=GreenSmoothieGenerator&text=Generate%20a%20green%20smoothie%20based%20on%20an%20ailment" class="twitter-hashtag-button" data-lang="en" data-related="jasoncosta">Tweet #GreenSmoothieGenerator</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-type="icon_link"></div>
