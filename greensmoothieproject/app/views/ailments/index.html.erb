@@ -11,7 +11,9 @@
     <%#= collection_select_tag 'name', Ailment.all, :id, :name, { include_blank: "" } %>
       <%= search_field_tag :search, params[:search], id: "tags", class: "search-query", size: "50", :placeholder => "Select an ailment" %>
       <%= submit_tag "Search", :name => nil, class: "btn btn-danger btn-lg", id: "search-submit" %>
-
+    <div>
+      <%= flash[:error] %>
+    </div>
   </div>
 <% end %><br>
 </div>

@@ -46,7 +46,7 @@
 .logo {
   font-size: 4em;
   font: arial-black;
-  color: white;
+  color: #228B22;
   text-shadow:
     -2px -2px 0 #000,
     2px -2px 0 #000,
@@ -124,7 +124,7 @@ p {
 }
 
 .disclaimer {
-  color: black;
+  color: gray;
   text-align: justify;
   padding-top: 5px;
   padding-bottom: 5px;
