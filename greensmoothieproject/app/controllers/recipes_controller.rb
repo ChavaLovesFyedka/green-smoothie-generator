@@ -4,35 +4,22 @@ class RecipesController < ApplicationController
   # end
 
     def index
-    @recipes = Recipe.all
       if params[:search].nil?
        @recipes = []
       else
-        quoted_search_terms = params[:search].split(",").collect do |ailment|
-        "\"+#{ailment.strip}\""
-      end.join(" ")
-
-      @recipes = []
-      begin
-        @search = Recipe.search do
-          fulltext quoted_search_terms do
-            highlight :page_content
-            minimum_match 1
-          end
-        end
-
-        @recipes = @search.results
-        @recipes << Recipe.first if @recipes.count == 0
-      rescue
-        @recipes = Recipe.all.sample(5)
+        # based on name that's passed in, look up ailment, then ask for its recipes - get recipes for particular affliction
+        #want to have a case-insensitive find_by for ActiveRecord -- change find by to where method
+        affliction = Ailment.where("lower(name) = ?", params[:search].downcase).first
+          randomly_selected_recipe = affliction.recipes.sample
+        @recipe_name = randomly_selected_recipe.name
       end
-      @recipe_name = @recipes[0..4].collect(&:name).shuffle.first
-      @recipe_url = Recipe.find_by(:name => @recipe_name).try(:url)
+
+
 
       respond_to do |format|
-        format.html { render action: "index" }
+        format.html { render action: "show" }
         format.js
       end
     end
-  end
+  #end
 end

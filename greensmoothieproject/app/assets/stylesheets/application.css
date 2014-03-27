@@ -44,7 +44,7 @@
 }
 
 .logo {
-  font-size: 5em;
+  font-size: 4em;
   font: arial-black;
   color: white;
   text-shadow:
@@ -52,7 +52,7 @@
     2px -2px 0 #000,
     -2px 2px 0 #000,
     2px 2px 0 #000;
-  padding-bottom: 20px;
+  padding-bottom: 5px;
   margin-left: -70px;
 }
 
@@ -83,7 +83,7 @@ a:hover {
   bottom: 0;
   right: 0;
 
-  background-image: image-url('hospital_bed_blurred_camera_2.jpg');
+  background-image: image-url('20120822-green-juice-organic-ave.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
@@ -124,7 +124,7 @@ p {
 }
 
 .disclaimer {
-  color: white;
+  color: black;
   text-align: justify;
   padding-top: 5px;
   padding-bottom: 5px;

@@ -42,3 +42,14 @@ Ailment.create(name: 'PMS')
 Ailment.create(name: 'Psoriasis')
 Ailment.create(name: 'Underweight')
 Ailment.create(name: 'Water Retention')
+
+Recipe.create(name: 'Apple-Lemon Smoothie', description: 'Apple-Lemon
+2 apples
+1/2 lemon juiced
+1 whole carrot
+2 cups fresh baby spinach (or other leafy green)
+1/2 cup water
+
+Calories: 195 | Fat: 0.7g (grams) | Protein: 4.1g | Carbs: 53.6g | Calcium: 15% | Vitamin A: 255% | Vitamin C: 138%')
+
+

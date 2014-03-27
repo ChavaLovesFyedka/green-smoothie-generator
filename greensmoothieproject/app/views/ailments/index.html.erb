@@ -1,22 +1,17 @@
-
-
-
-<br>
 <div class="search-form" >
-<br>
-<br>
 <h1 class="logo">Green Smoothie Generator</h1>
 
 <img src="http://fc06.deviantart.net/fs41/i/2009/042/9/a/Ghost_in_a_Blender_by_venkman_project.jpg" alt="Juice" width="250" height="200">
 
-<p><h4>Switch to a collection_select drop down menu</h4></p>
+
+
 
 <%= form_tag recipes_path, :remote => true, :method => :get do %>
   <div class="ui-widget">
+    <%#= collection_select_tag 'name', Ailment.all, :id, :name, { include_blank: "" } %>
       <%= search_field_tag :search, params[:search], id: "tags", class: "search-query", size: "50", :placeholder => "Select an ailment" %>
       <%= submit_tag "Search", :name => nil, class: "btn btn-danger btn-lg", id: "search-submit" %>
 
-      <!-- :"data-toggle" => "modal", :"data-target" => "#myModal", -->
   </div>
 <% end %><br>
 </div>
