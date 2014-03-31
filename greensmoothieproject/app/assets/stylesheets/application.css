@@ -132,11 +132,11 @@ p {
 }
 
 .try-again-link {
-  text-align: right;
+  text-align: center;
 }
 
 p {
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .ui-autocomplete {
