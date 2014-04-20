@@ -1,5 +1,7 @@
-set :application, "set your application name here"
-set :repository,  "set your repository location here"
+require 'bundler/capistrano'
+
+set :application, "Green Smoothie Generator"
+set :repository,  "https://github.com/ChavaLovesFyedka/green-smoothie-generator"
 
 default_run_options[:pty] = true
 
@@ -24,4 +26,4 @@ namespace :deploy do
   task :restart, :roles => :app, :except => { :no_release => true } do
     run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
   end
-# end
+end

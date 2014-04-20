@@ -17,6 +17,7 @@ class RecipesController < ApplicationController
           randomly_selected_recipe = affliction.recipes.sample
         @recipe_name = randomly_selected_recipe.name
         @recipe_url = randomly_selected_recipe.url
+        @recipe_description = randomly_selected_recipe.decription
         else
           flash[:error] = "Please enter an existing ailment."
         end
