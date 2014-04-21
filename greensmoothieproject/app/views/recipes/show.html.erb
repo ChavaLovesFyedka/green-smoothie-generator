@@ -18,16 +18,13 @@
   </div>
     <div class="col-md-4">
     <center>
-   <h4>Ingredients: </h4>
+   <p>Ingredients: </p>
     <p><%= @recipe_name %></p><br>
-    <p><%= @recipe_description %></p><br>
+    <p><%= simple_format(@recipe_description) %></p><br>
     </div>
 </div>
 
-
 </br>
 </br>
 </br>
 </br>
-  <p class="disclaimer"><strong>Disclaimer:</strong><br>
-    Nutrition is a supplement, not a substitute, for conventional medicine.  Please consider food allergies, carb/fruit sugar content, medicine contraindications, etc. before consuming new foods.</p>
