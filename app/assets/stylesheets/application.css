@@ -1,0 +1,189 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+#copyright {
+ color: white;
+ font-size: 0.8em;
+ text-align: left;
+ padding: 10px;
+ position:absolute;
+ bottom:0px;
+ float: right;
+}
+
+#copyright a {
+ color: white;
+}
+
+#copyright a:hover {
+ color: #005880;
+}
+
+.ui-menu-item {
+  font-size: 1.2em;
+}
+
+.ui-autocomplete {
+  zoom: 150%;
+}
+
+.search-form {
+  margin-top: 11%;
+  zoom: 150%;
+}
+
+.logo {
+  font-size: 4em;
+  font: arial-black;
+  color: #228B22;
+  text-shadow:
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;
+  padding-bottom: 5px;
+  margin-left: -70px;
+}
+
+#tags {
+  width: 55%;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+
+.close-out {
+  color: white;
+  text-align: right;
+  font-size: 1.5em;
+  padding-right: 2%;
+  padding-top: 2%;
+ }
+
+.close-out a {
+  color: gray;
+ }
+
+#background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  background-image: image-url('20120822-green-juice-organic-ave.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+
+  z-index: -1;
+}
+
+body {
+  text-align: center;
+}
+
+p {
+  color: gray;
+  opacity: 1;
+}
+
+#recipe-result {
+  background-color: rgba(0,0,0,0.7);
+  width: 55%;
+  margin: 0 auto;
+  margin-top: 3%;
+  border-radius: 25px;
+}
+
+
+.result-modal {
+  padding: 40px;
+  margin-top:-40px;
+}
+
+.result {
+  color: white;
+  padding-top: 0px;
+}
+
+.disclaimer {
+  color: gray;
+  text-align: justify;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  line-height: 105%;
+}
+
+.try-again-link {
+  text-align: center;
+}
+
+p {
+  font-size: 20px;
+}
+
+.ui-autocomplete {
+  max-height: 200px;
+  overflow-y: auto;
+  /* prevent horizontal scrollbar */
+  overflow-x: hidden;
+  text-align: left;
+}
+
+@media only screen and (max-width: 450px) {
+
+  #recipe-result {
+    zoom: 50%;
+  }
+
+  h2 {
+    font-size: 1em;
+  }
+
+  .logo {
+    font-size: 1.75em;
+    font: arial-black;
+    color: white;
+    text-shadow:
+      -2px -2px 0 #000,
+      2px -2px 0 #000,
+      -2px 2px 0 #000,
+      2px 2px 0 #000;
+    padding-bottom: 0;
+    margin: 0 auto;
+  }
+
+  .search-form {
+  margin-top: 0;
+  zoom: 100%;
+  }
+
+  .search-query {
+    margin: 0 40px 100px 40px;
+  }
+
+  #tags {
+    width: 60%;
+    margin-bottom: 10px;
+  }
+
+  .ui-autocomplete {
+    visibility: hidden;
+  }
+
+
+}
+

@@ -1,0 +1,30 @@
+<div class="close-out"><%= link_to "/", "/" %></div>
+  <div class="result-modal">
+  <p>
+    <h2 class="ailment-recipe">Here is your smoothie:</h2>
+    <h2><%= link_to @recipe_name.upcase, @recipe_url, :target => "blank" %></h2>
+  </p>
+  <%= image_tag "skinny-tropical-green-smoothie.jpg", :id => "smoothie-image" %>
+  
+  <h3 class="try-again-link"><%= link_to "Meh? Try again for a new recipe >>", "/" %></h3>
+  </div>
+
+
+
+<div class = "container-fluid">
+<div class="row">
+  <div class="col-md-4"> 
+
+  </div>
+    <div class="col-md-4">
+    <center>
+   <p>Ingredients: </p>
+    <p><%= @recipe_name %></p><br>
+    <p><%= simple_format(@recipe_description) %></p><br>
+    </div>
+</div>
+
+</br>
+</br>
+</br>
+</br>
